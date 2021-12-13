@@ -1,33 +1,8 @@
-// The MIT License (MIT)
-
-// Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
-
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
-
-
-
-
-! function($) {
+! function ($) {
 
     "use strict";
 
-    var Typed = function(el, options) {
+    var Typed = function (el, options) {
 
         // chosen element to manipulate text
         this.el = $(el);
@@ -94,18 +69,18 @@
         constructor: Typed
 
         ,
-        init: function() {
+        init: function () {
             // begin the loop w/ first current string (global self.string)
             // current string will be passed as an argument each time after this
             var self = this;
-            self.timeout = setTimeout(function() {
+            self.timeout = setTimeout(function () {
                 // Start typing
                 self.typewrite(self.strings[self.arrayPos], self.strPos);
             }, self.startDelay);
         }
 
         ,
-        build: function() {
+        build: function () {
             // Insert cursor
             if (this.showCursor === true) {
                 this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
@@ -116,7 +91,7 @@
 
         // pass current string state to each function, types 1 char per call
         ,
-        typewrite: function(curString, curStrPos) {
+        typewrite: function (curString, curStrPos) {
             // exit when stopped
             if (this.stop === true) {
                 return;
@@ -136,7 +111,7 @@
             // else{ self.backDelay = 500; }
 
             // contain typing function in a timeout humanize'd delay
-            self.timeout = setTimeout(function() {
+            self.timeout = setTimeout(function () {
                 // check for an escape character before a pause value
                 // format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
                 // single ^ are removed from string
@@ -175,7 +150,7 @@
                 }
 
                 // timeout for any pause after a character
-                self.timeout = setTimeout(function() {
+                self.timeout = setTimeout(function () {
                     if (curStrPos === curString.length) {
                         // fires callback function
                         self.options.onStringTyped(self.arrayPos);
@@ -192,7 +167,7 @@
                                 return;
                         }
 
-                        self.timeout = setTimeout(function() {
+                        self.timeout = setTimeout(function () {
                             self.backspace(curString, curStrPos);
                         }, self.backDelay);
                     } else {
@@ -230,7 +205,7 @@
         }
 
         ,
-        backspace: function(curString, curStrPos) {
+        backspace: function (curString, curStrPos) {
             // exit when stopped
             if (this.stop === true) {
                 return;
@@ -241,7 +216,7 @@
             var humanize = Math.round(Math.random() * (100 - 30)) + this.backSpeed;
             var self = this;
 
-            self.timeout = setTimeout(function() {
+            self.timeout = setTimeout(function () {
 
                 // ----- this part is optional ----- //
                 // check string array position
@@ -329,7 +304,7 @@
 
         // Reset and rebuild the element
         ,
-        reset: function() {
+        reset: function () {
             var self = this;
             clearInterval(self.timeout);
             var id = this.el.attr('id');
@@ -344,8 +319,8 @@
 
     };
 
-    $.fn.typed = function(option) {
-        return this.each(function() {
+    $.fn.typed = function (option) {
+        return this.each(function () {
             var $this = $(this),
                 data = $this.data('typed'),
                 options = typeof option == 'object' && option;
@@ -377,13 +352,13 @@
         // either html or text
         contentType: 'html',
         // call when done callback function
-        callback: function() {},
+        callback: function () { },
         // starting callback function before each string
-        preStringTyped: function() {},
+        preStringTyped: function () { },
         //callback for every typed string
-        onStringTyped: function() {},
+        onStringTyped: function () { },
         // callback for reset
-        resetCallback: function() {}
+        resetCallback: function () { }
     };
 
 
