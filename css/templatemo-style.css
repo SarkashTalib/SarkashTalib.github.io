@@ -360,6 +360,13 @@ header .social-icon li a
 	{
 		padding-bottom: 0px;
 	}
+/* #portfolio .row 
+	{
+		display: flexbox;
+		grid-template-rows: (1, 2) (2, 3);
+		align-items: center;
+		justify-content: center;
+	} */
 #portfolio .col-md-3
 	{
 		padding: 20px;
