@@ -277,29 +277,29 @@ header .social-icon li a
 		margin-bottom: 20px;
 		margin-right: 20px;
 	}
-#about .media-heading-wrapper h3
+/* #about .media-heading-wrapper h3
 	{
 		font-size: 18px;
 		font-weight: bold;
 		padding-top: 20px;
 		padding-left: 52px;
-	}
-	#about .media-heading-about
-		{
-			display: flex;
-  		align-items: center;
-  		justify-content: center;
-		}
-#about .profile
+	} */
+
+#about .media-heading-about
 	{
-		/* display: flex;
-    align-items: center;
-    justify-content: center; */
-		/* align-items: flex-flow; */
-		border-radius: 23%;
-		width: 350px;
-		height: 260px;
-		margin-right: 65px;
+		display: grid;
+		align-items: center;
+		justify-items: center;
+	}
+#about .media-heading-about .profile
+	{
+		display: block;
+		align-items: center;
+		justify-content: center;
+		border-radius: 25%;
+		width: 360px;
+		height: 265px;
+		/* margin-right: 65px; */
 		margin-top: 20px;
 	}
 
@@ -311,7 +311,7 @@ header .social-icon li a
 	{
 		padding-bottom: 100px;
 	}
-#service .col-md-4
+#skills .col-sm-3
 	{
 		padding: 40px;
 		-webkit-transition: all 0.4s ease-in-out;
@@ -353,6 +353,7 @@ header .social-icon li a
  		font-size: large;
 		font-weight: 400;
 	}
+#skills
 /* end service */
 
 /* start portfolio */
@@ -525,7 +526,15 @@ header .social-icon li a
 
 }
 /* end 360 media quires */
-
+@media only screen and ( max-width: 560px ) {
+	#skills .skills-bulletpoint
+	{
+		display: block;
+		text-align: justify;
+		font-size: large;
+		font-weight: 400;
+	}
+}
 /* start 768 media quires */
 @media only screen and ( max-width: 767px ) {
 	#home
@@ -562,6 +571,7 @@ header .social-icon li a
 		padding-bottom: 5px;
 		line-height: 35px;
 	}
+
 }
 /* end 768 media quires */
 
@@ -581,6 +591,12 @@ header .social-icon li a
 		{
 			font-size: 32px;
 		}
-
+	#skills .skills-bulletpoint
+		{
+			display: block;
+			text-align: justify;
+			font-size: large;
+			font-weight: 400;
+		}
 }
 /* end 360 media quires */
