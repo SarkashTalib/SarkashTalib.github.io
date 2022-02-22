@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sarkash</title>
+</head>
+
+<body class="container bg-background">
+  <!-- navbar goes here -->
+  <nav class="bg-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between">
+        <!-- logo -->
+        <div class="text-3xl font-alexbrush p-10 ">S.T</div>
+        <!-- large screen view -->
+        <div class="hidden md:flex justify-between ">
+          <a href="#"
+            class="text-lg lg:ext-xl font-roboto text-grayish px-4 flex-shrink-0 lg:px-6 py-10 hover:text-amber transition duration-150 ease-out hover:ease-in">HOME</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish px-4 flex-shrink-0 lg:px-6 py-10 hover:text-amber transition duration-150 ease-out hover:ease-in">ABOUT
+            ME</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish px-4 flex-shrink-0 lg:px-6 py-10 hover:text-amber transition duration-150 ease-out hover:ease-in">SKILLS</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish px-4 flex-shrink-0 lg:px-6 py-10 hover:text-amber transition duration-150 ease-out hover:ease-in">PROJECTS</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish px-4 flex-shrink-0 lg:px-6 py-10 hover:text-amber transition duration-150 ease-out hover:ease-in">CONTACT
+            ME</a>
+        </div>
+        <div class="md:hidden flex items-center pr-10 text-grayish hover:text-amber">
+          <button class="mobile-menu-button "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu hidden md:hidden">
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber transition duration-150 ease-out hover:ease-in">HOME</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber">ABOUT</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber">SKILLS</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber">PROJECTS</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber">CONTACT</a>
+
+    </div>
+
+    <!-- mobile view  -->
+  </nav>
+</body>
+<script>
+  const btn = document.querySelector('.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden",);
+  });
+</script>
+
+</html>
