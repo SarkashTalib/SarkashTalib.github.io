@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sarkash</title>
+</head>
+
+<body class="container bg-background px-5">
+  <!-- navbar goes here -->
+  <nav class="sticky top-0 bg-background">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between">
+        <!-- logo -->
+        <div class="text-3xl font-alexbrush py-5  ">S.T</div>
+        <!-- large screen view -->
+        <div class="hidden md:flex justify-between ">
+          <a href="#home"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">HOME</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">ABOUT
+            ME</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">SKILLS</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">PROJECTS</a>
+          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">CONTACT
+            ME</a>
+        </div>
+        <div class="md:hidden flex items-center  text-grayish hover:text-amber  ">
+          <button class="mobile-menu-button hover:ease-in-out duration-300"><svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+          </button>
+
+        </div>
+      </div>
+    </div>
+    <!-- mobile view  -->
+    <div class="mobile-menu hidden md:hidden">
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300">HOME</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
+      <a href="#"
+        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
+
+    </div>
+
+
+
+  </nav>
+  <section id="home" class="max-w-6xl mx-auto md:pt-32">
+    <figure class=" md:flex  rounded-xl p-8 md:p-0 ">
+      <img class=" w-40 h-40 md:w-72 md:h-auto lg:w-96 md:mr-8 rounded-full md:rounded-none mx-auto bg-blend-color"
+        src="../images/Pic2.svg" alt="">
+      <div class="pt-6 lg:pl-20 xl:pl-40 md:py-8 text-center md:text-left space-y-4">
+        <blockuote>
+          <p class="text-3xl md:text-5xl font-lora text-dark/75 leading-tight md:leading-snug ">
+            “I design and develop experiences that make people's lives easier”
+          </p>
+        </blockuote>
+        <figcaption class="font-xl">
+          <div class="text-grayish/80 font-lora mt-10 ">
+            FRONT/BACK END DEVELOPER AND DESIGNER </div>
+        </figcaption>
+      </div>
+    </figure>
+    <div class="text-center md:mt-20">
+      <p class="text-md  md:text-xl font-lora text-dark/75">Using my passion to help you pursue yours</p>
+      <div class="flex-nowrap inline-flex justify-center m-3">
+        <a href="../assets/Resume.pdf" download="Sarkash-Talib">
+          <img src=" ../images/resume.png"
+            class=" w-5 h-auto mx-2 md:mx-5 hover:bg-amber/50 hover:ease-in-out duration-300">
+        </a>
+        <a href="../assets/Resume.pdf"
+          class=" text-md md:text-lg font-lora text-grayish underline underline-offset-4 hover:text-amber hover:ease-in-out duration-300"
+          download="Sarkash-Talib">
+          DOWNLOAD RESUME
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+</body>
+
+
+<script>
+  const btn = document.querySelector('.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden",);
+  });
+</script>
+
+</html>
