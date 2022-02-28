@@ -3,6 +3,12 @@ module.exports = {
     "./dist/index.html",
     "./node_modules/flowbite/**/*.js"
   ],
+  purge: {
+    enabled: true,
+    content: [
+        './dist/index.html'
+    ]
+  },
   theme: {
     container: {
       center: true,
