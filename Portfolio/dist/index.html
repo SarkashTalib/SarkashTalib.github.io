@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
   <title>Sarkash</title>
 </head>
 
@@ -19,8 +20,8 @@
         <!-- large screen view -->
         <div class="hidden md:flex justify-between ">
           <a href="#home"
-            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">HOME</a>
-          <a href="#"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300 ">HOME</a>
+          <a href="#about-me"
             class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">ABOUT
             ME</a>
           <a href="#"
@@ -44,9 +45,9 @@
     </div>
     <!-- mobile view  -->
     <div class="mobile-menu hidden md:hidden">
-      <a href="#"
+      <a href="#home"
         class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300">HOME</a>
-      <a href="#"
+      <a href="#about-me"
         class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
       <a href="#"
         class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
@@ -60,7 +61,7 @@
 
 
   </nav>
-  <section id="home" class="max-w-6xl mx-auto md:pt-32">
+  <section id="home" class="max-w-6xl mx-auto md:pt-32 ">
     <figure class=" md:flex  rounded-xl p-8 md:p-0 ">
       <img class=" w-40 h-40 md:w-72 md:h-auto lg:w-96 md:mr-8 rounded-full md:rounded-none mx-auto bg-blend-color"
         src="../images/Pic2.svg" alt="">
@@ -71,12 +72,12 @@
           </p>
         </blockuote>
         <figcaption class="font-xl">
-          <div class="text-grayish/80 font-lora mt-10 ">
+          <div class="text-grayish/80 font-lora mt-10">
             FRONT/BACK END DEVELOPER AND DESIGNER </div>
         </figcaption>
       </div>
     </figure>
-    <div class="text-center md:mt-20">
+    <div class="text-center md:mt-20 ">
       <p class="text-md  md:text-xl font-lora text-dark/75">Using my passion to help you pursue yours</p>
       <div class="flex-nowrap inline-flex justify-center m-3">
         <a href="../assets/Resume.pdf" download="Sarkash-Talib">
@@ -93,7 +94,39 @@
 
   </section>
 
+  <section id="about-me" class="max-w-6xl mx-auto pt-32">
+    <div class="md:flex md:justify-between  justify-center">
+      <div class=" md:mr-10  ">
+        <h1 class="text-2xl text-center md:text-left md:text-3xl font-lora font-semibold  text-dark/75">Hi, I'm Sarkash
+          Talib</h1>
+        <p
+          class="text-xl md:2xl font-lora text-grayish text-center md:text-left md:leading-snug p-10 md:pl-0 md:max-w-md md:pt-10">
+          I'm
+          a Front / Back End
+          Developer
+          based in outskirts
+          of
+          London.<br>
 
+          <br>I am a highly motivated, ambitious and hard-working person. I love combining the worlds of logic and
+          creative
+          design to
+          make eye-catching, accessible, and user-friendly websites and applications.<br>
+
+          <br>I am constantly looking for new opportunities to further expand my skills and knowledge. I am a fast
+          learner
+          and pride
+          myself on my attention to details.
+        </p>
+        <div class="my-5 md:mt-5 flex  justify-center"><a href="#contact-me"
+            class=" text-md md:text-lg font-lora underline underline-offset-3 text-dark/65 text-center md:text-left hover:text-amber hover:ease-in-out duration-300">Get
+            in touch here</a>
+        </div>
+      </div>
+
+      <img src="../images/about.jpg" class=" bg-grayish rounded-sm max-w-0 md:max-w-sm lg:max-h-fit mb-10">
+    </div>
+  </section>
 
 
 </body>
@@ -103,9 +136,13 @@
   const btn = document.querySelector('.mobile-menu-button');
   const menu = document.querySelector('.mobile-menu');
 
+
+
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden",);
   });
+  btn.clickClose
 </script>
+
 
 </html>
