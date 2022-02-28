@@ -33,8 +33,8 @@
             ME</a>
         </div>
         <div class="md:hidden flex items-center  text-grayish hover:text-amber  ">
-          <button class="mobile-menu-button hover:ease-in-out duration-300"><svg xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button class=" hover:ease-in-out duration-300" data-dropdown-toggle="dropdown"><svg
+              xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
 
@@ -44,17 +44,17 @@
       </div>
     </div>
     <!-- mobile view  -->
-    <div class="mobile-menu hidden md:hidden">
+    <div id="dropdown" class=" hidden md:hidden bg-background min-w-full sticky top-0">
       <a href="#home"
-        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300">HOME</a>
+        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300">HOME</a>
       <a href="#about-me"
-        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
+        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
       <a href="#"
-        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
+        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
       <a href="#"
-        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
+        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
       <a href="#"
-        class="block text-lg py-2 px-10 text-md  text-right text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
+        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
 
     </div>
 
@@ -94,7 +94,7 @@
 
   </section>
 
-  <section id="about-me" class="max-w-6xl mx-auto py-32">
+  <section id="about-me" class="max-w-6xl mx-auto py-24">
     <div class="lg:flex lg:justify-between  justify-center">
       <div class=" md:mr-10  ">
         <h1 class="text-2xl text-center lg:text-left md:text-3xl font-lora font-semibold  text-dark/75">Hi, I'm Sarkash
@@ -126,13 +126,16 @@
 
       <img src="../images/about.jpg" class=" bg-grayish rounded-sm max-w-0 lg:max-w-md  lg:max-h-auto mb-10">
     </div>
+
+
   </section>
 
 
+  <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
 
 
-<script>
+<!-- <script>
   const btn = document.querySelector('.mobile-menu-button');
   const menu = document.querySelector('.mobile-menu');
 
@@ -141,8 +144,10 @@
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden",);
   });
-  btn.clickClose
-</script>
+  btn.addEventListener("click", () => {
+    menu.classList.after("tw-hidden",);
+  })
+</script> -->
 
 
 </html>
