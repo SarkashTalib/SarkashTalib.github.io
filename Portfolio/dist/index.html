@@ -6,50 +6,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
   <title>Sarkash</title>
 </head>
 
 <body class="container bg-background px-5">
-  <!-- navbar goes here -->
+
   <nav class="sticky top-0 bg-background">
+
     <div class="max-w-6xl mx-auto">
       <div class="flex justify-between">
-        <!-- logo -->
+
         <div class="text-3xl font-alexbrush py-5  ">S.T</div>
-        <!-- large screen view -->
         <div class="hidden md:flex justify-between ">
+
           <a href="#home"
             class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300 ">HOME</a>
           <a href="#about-me"
             class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">ABOUT
             ME</a>
-          <a href="#"
+          <a href="#skills"
             class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">SKILLS</a>
           <a href="#"
             class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">PROJECTS</a>
           <a href="#"
             class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">CONTACT
             ME</a>
+
         </div>
+
         <div class="md:hidden flex items-center  text-grayish hover:text-amber  ">
           <button class=" hover:ease-in-out duration-300" data-dropdown-toggle="dropdown"><svg
               xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-
           </button>
-
         </div>
+
       </div>
     </div>
     <!-- mobile view  -->
     <div id="dropdown" class=" hidden md:hidden bg-background min-w-full sticky top-0">
+
       <a href="#home"
         class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300">HOME</a>
       <a href="#about-me"
         class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
-      <a href="#"
+      <a href="#skills"
         class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
       <a href="#"
         class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
@@ -58,80 +60,181 @@
 
     </div>
 
-
-
   </nav>
+
   <section id="home" class="max-w-6xl mx-auto py-32 md:pt-52  ">
+
     <figure class=" md:flex  rounded-xl p-8 md:p-0 ">
       <img class=" w-40 h-40 md:w-72 md:h-auto lg:w-96 md:mr-8 rounded-full md:rounded-none mx-auto bg-blend-color"
         src="../images/Pic2.svg" alt="">
+
       <div class="pt-6 lg:pl-20 xl:pl-40 md:py-8 text-center md:text-left space-y-4">
         <blockuote>
           <p class="text-3xl md:text-5xl font-lora text-dark/75 leading-tight md:leading-snug ">
             “I design and develop experiences that make people's lives easier”
           </p>
         </blockuote>
+
         <figcaption class="font-xl">
           <div class="text-grayish/80 font-lora mt-10">
             FRONT/BACK END DEVELOPER AND DESIGNER </div>
         </figcaption>
+
       </div>
+
     </figure>
+
     <div class="text-center md:mt-20 ">
       <p class="text-md  md:text-xl font-lora text-dark/75">Using my passion to help you pursue yours</p>
+
       <div class="flex-nowrap inline-flex justify-center m-3">
+
         <a href="../assets/Resume.pdf" download="Sarkash-Talib">
-          <img src=" ../images/resume.png"
-            class=" w-5 h-auto mx-2 md:mx-5 hover:bg-amber/50 hover:ease-in-out duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-auto mx-2 md:mx-5 text-grayish/75 hover:text-amber/50 hover:ease-in-out duration-300"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
         </a>
+
         <a href="../assets/Resume.pdf"
           class=" text-md md:text-lg font-lora text-grayish underline underline-offset-4 hover:text-amber hover:ease-in-out duration-300"
           download="Sarkash-Talib">
           DOWNLOAD RESUME
         </a>
+
       </div>
+
     </div>
 
   </section>
 
   <section id="about-me" class="max-w-6xl mx-auto py-24">
+
     <div class="lg:flex lg:justify-between  justify-center">
+
       <div class=" md:mr-10  ">
         <h1 class="text-2xl text-center lg:text-left md:text-3xl font-lora font-semibold  text-dark/75">Hi, I'm Sarkash
           Talib</h1>
+
         <p
           class="text-xl md:text-2xl font-lora text-grayish text-center lg:text-left md:leading-snug md:tracking-wide p-10 md:pl-0 md:pr-0  md:pt-10">
-          I'm
-          a Front / Back End
-          Developer
-          based in outskirts
-          of
-          London.<br>
-
+          I'm a Front / Back End Developer based in outskirts of London.<br>
           <br>I am a highly motivated, ambitious and hard-working person. I love combining the worlds of logic and
-          creative
-          design to
-          make eye-catching, accessible, and user-friendly websites and applications.<br>
+          creative design to make eye-catching, accessible, and user-friendly websites and applications.<br>
 
           <br>I am constantly looking for new opportunities to further expand my skills and knowledge. I am a fast
-          learner
-          and pride
-          myself on my attention to details.
+          learner and pride myself on my attention to details.
         </p>
+
         <div class="my-5  flex  justify-center"><a href="#contact-me"
             class=" text-md md:text-lg font-lora underline underline-offset-3 text-dark/65 text-center md:text-left hover:text-amber hover:ease-in-out duration-300">Get
             in touch here</a>
         </div>
+
       </div>
 
       <img src="../images/about.jpg" class=" bg-grayish rounded-sm max-w-0 lg:max-w-md  lg:max-h-auto mb-10">
+
     </div>
+  </section>
 
+  <section id="skills" class="max-w-6xl mx-auto py-24">
+    <div class="flex-row text-center justify-center">
 
+      <h1 class="text-3xl md:text-5xl font-lora font-semibold uppercase text-dark/75">my toolbox</h1>
+      <div class="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-6 gap-3 md:gap-10 place-items-center mt-20">
+
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/html.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          html
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/css.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          css
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/sass.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          sass
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/tail.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          tailwind
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/react.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          react.js
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/js.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          js
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/figma.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          figma
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/canva.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          canva
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/python.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          python
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/django.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          django
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/nodejs.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          node.js
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/typescript.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          ts
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/github.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          github
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/git.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          git
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/rest-api.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          restful
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/mysql.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          mysql
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/docker.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          docker
+        </div>
+        <div class="font-roboto uppercase  text-dark/80"> <img src="../images/postgres.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          postgres
+        </div>
+        <div class="font-roboto uppercase  text-dark/80 lg:col-span-3"> <img src="../images/TDD-logo.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          tdd/bdd
+        </div>
+        <div class="font-roboto uppercase  text-dark/80 lg:col-span-3"> <img src="../images/cicd.png"
+            class="md:w-20 md:h-20 w-14 h-16   pb-2">
+          ci/cd
+        </div>
+
+      </div>
+
+    </div>
   </section>
 
 
   <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+
 </body>
 
 </html>
