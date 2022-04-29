@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../blog/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css">
+  <link rel="stylesheet" href="../splide-4.0.1/dist/css/splide.min.css">
   <title>Sarkash</title>
-
 </head>
 
 <body class="container bg-background px-5">
@@ -36,8 +37,8 @@
         </div>
 
         <div class="md:hidden flex items-center  text-grayish hover:text-amber  ">
-          <button class=" hover:ease-in-out duration-300" data-dropdown-toggle="dropdown"><svg
-              xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button onclick="" class="dropbtn hover:ease-in-out duration-300"><svg xmlns="http://www.w3.org/2000/svg"
+              id="menu-button" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -46,22 +47,44 @@
       </div>
     </div>
     <!-- mobile view  -->
-    <div id="dropdown" class=" hidden md:hidden bg-background min-w-full sticky top-0">
+    <div id="menu" class="hidden  bg-background min-w-full sticky top-0 ">
 
-      <a href="#home"
-        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300">HOME</a>
-      <a href="#about-me"
-        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
-      <a href="#skills"
-        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
-      <a href="#projects"
-        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
-      <a href="#"
-        class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
+      <ul>
+        <li><a href="#home"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300">HOME</a>
+        </li>
+        <li><a href="#about-me"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
+        </li>
+        <li><a href="#skills"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
+        </li>
+        <li><a href="#projects"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
+        </li>
+        <li><a href="#"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
+        </li>
+      </ul>
 
     </div>
 
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="index.html"
+            class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+        <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a>
+        </li>
+        <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
   </nav>
+
+
+
 
   <section id="home" class="max-w-6xl mx-auto py-32 md:pt-52  ">
 
@@ -215,112 +238,32 @@
     </div>
   </section>
 
-  <section id="projects">
-    <div class="max-w-6xl mx-auto ">
-      <div id="default-carousel" data-carousel="static" class="relative ">
-
-        <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative max-w-3xl h-screen mx-auto   ">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out  group " data-carousel-item="active">
-            <img src="../images/carousel.svg"
-              class="block absolute opacity-100 group-hover:opacity-20 md:group-hover:opacity-20 ease-in-out duration-300 object-fit top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 "
-              alt="">
-
-            <a href="#home">
-              <div
-                class=" mx-auto top-3/4 lg:top-2/3 w-44 h-min md:w-56 md:h-min  opacity-100 lg:opacity-0 group-hover:opacity-100 duration-300 absolute inset-0  flex justify-center items-center rounded-3xl bg-button text-xl md:text-2xl text-dark/60 font-rubik font-medium uppercase  ">
-                lern more...</div>
-            </a>
+  <section id="projects" class="splide max-w-6xl mx-auto" role="group" aria-label="carousel-heading">
+    <div class="splide__track ">
+      <ul class="splide__list ">
+        <li class="splide__slide">
+          <div class="splide__slide__container flex justify-center ">
+            <img class="w-11/12 hover:opacity-50 hover:ease-in-out duration-500" src="../images/carousel.svg"
+              alt="carousel image">
           </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out " data-carousel-item="active">
-            <img src="../images/about.jpg"
-              class=" block absolute max-w-2xl top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 " alt="...">
-            <button
-              class="bg-grey-light hidden hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded  items-center">
-              <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-              </svg>
-              <span>Download</span>
-            </button>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container flex justify-center">
+            <img class="w-11/12" src="../images/carousel.svg" alt="carousel image">
           </div>
-
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="/docs/images/carousel/carousel-3.svg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-
-          </div>
-
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="../images/carousel.svg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-          </div>
-
-          <!-- Item 5 -->
-          <!-- <div class="hidden duration-700 ease-in-out group" data-carousel-item="active">
-            <div class="">
-              <img src="../images/canva.png" alt=""
-                class="block  max-w-2xl mx-auto  opacity-100 group-hover:opacity-20 tramf">
-            </div>
-
-            <a href="#home">
-              <div
-                class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center w-96 h-56 mx-auto bottom-1/2 text-2xl text-dark  border-2 border-alert">
-                click here
-              </div>
-            </a>
-          </div> -->
-
-
-        </div>
-
-        <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 space-x-3 -translate-x-1/2">
-          <button type="button" class="w-3 h-3 bg-light rounded-full dark:bg-gray-800" aria-current="true"
-            aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full bg-light/60 hover:bg-light" aria-current="false"
-            aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full bg-light/60 hover:bg-light" aria-current="false"
-            aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full bg-light/60 hover:bg-light" aria-current="false"
-            aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full bg-light/60 hover:bg-light" aria-current="false"
-            aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        </div>
-
-        <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 justify-center items-center px-4 h-full cursor-pointer "
-          data-carousel-prev>
-          <span class="inline-flex justify-center items-center">
-            <svg class="w-5 h-5 md:w-12 md:h-12 text-grayish hover:text-button " fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-            </svg>
-            <span class="hidden">Previous</span>
-          </span>
-        </button>
-        <button type="button"
-          class="flex absolute top-0 right-0 justify-center items-center px-4 h-full cursor-pointer group "
-          data-carousel-next>
-          <span class="inline-flex justify-center items-center">
-            <svg class="w-5 h-5 md:w-12 md:h-12 text-grayish hover:text-button " fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-            <span class="hidden">Next</span>
-          </span>
-        </button>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 
-
-
+  <script src="index.js"></script>
+  <script src="../splide-4.0.1/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var splide = new Splide('.splide');
+      splide.mount();
+    });
+  </script>
 </body>
-<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
-<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 
 </html>

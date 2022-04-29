@@ -1,7 +1,6 @@
 module.exports = {
   content: [
     "./dist/index.html",
-    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     container: {
@@ -30,7 +29,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
-    require('flowbite/plugin')
   ],
   variants: {
       extend: {
