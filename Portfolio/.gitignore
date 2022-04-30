@@ -1,6 +1,4 @@
-node_modules/
 .vscode
-
 
 
 # npx tailwindcss -i ./src/main.css -o ./blog/style.css --watch
