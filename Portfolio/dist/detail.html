@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../blog/style.css">
+
+  <title>Detail</title>
+</head>
+
+
+<body class="container bg-background px-5">
+
+  <nav class="sticky top-0 z-50 bg-background">
+
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between">
+
+        <div class="text-3xl font-alexbrush py-5  ">S.T</div>
+        <div class="hidden md:flex justify-between ">
+
+          <a href="index.html#home"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300 ">HOME</a>
+          <a href="index.html#about-me"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">ABOUT
+            ME</a>
+          <a href="index.html#skills"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">SKILLS</a>
+          <a href="index.html#projects"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">PROJECTS</a>
+          <a href="index.html#"
+            class="text-lg lg:text-xl font-roboto text-grayish pl-4 flex-shrink-0 lg:pl-6 pt-6 hover:text-amber hover:ease-in-out duration-300">CONTACT</a>
+
+        </div>
+
+        <div class="md:hidden flex items-center  text-grayish hover:text-amber  ">
+          <button onclick="" class="dropbtn hover:ease-in-out duration-300"><svg xmlns="http://www.w3.org/2000/svg"
+              id="menu-button" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!-- mobile view  -->
+    <div id="menu" class="hidden  bg-background min-w-full sticky top-0 ">
+
+      <ul>
+        <li><a href="#home"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300">HOME</a>
+        </li>
+        <li><a href="#about-me"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">ABOUT</a>
+        </li>
+        <li><a href="#skills"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">SKILLS</a>
+        </li>
+        <li><a href="#projects"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
+        </li>
+        <li><a href="#"
+            class="block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="index.html"
+            class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+        <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a>
+        </li>
+        <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <section>
+    <div class=" max-w-6xl mx-auto ">
+      <img src="../project-img/portfolio-01-detail.svg" alt="JobPlus Website"
+        class="w-11/12 mx-auto rounded drop-shadow-2xl">
+      <p class=" w-10/12 text-xl my-10 mx-auto font-roboto leading-normal">I have built TopTargetCrypto, which is a
+        dynamic website
+        for a group of
+        enthusiastic of crypto related matters.<br>
+
+
+        I have used Django at the backend with help of bootstrap for the frontend. The authors publish a much detailed
+        blog post
+        from the rich featured Django admin template when visitors can register themselves and post comments on any
+        post.<br>
+
+        Features such as blog list view with date of post, tag, by author and numbers on total comments. And category,
+        tags and
+        search.
+      </p>
+    </div>
+
+    <div class=" max-w-6xl mx-auto text-center flex justify-evenly my-18">
+
+      <button
+        class="px-5 lg:px-7 lg:py-1.5 bg-button text-md md:text-xl lg:text-3xl rounded-xl  hover:bg-amber ease-in-out duration-500"
+        onclick="window.open(' https://www.toptargetcrypto.com', '_blank')"> Live Demo</button>
+      <button
+        class="px-5 lg:px-7 lg:py-1.5 bg-button text-md md:text-xl lg:text-3xl rounded-xl  hover:bg-amber ease-in-out duration-500"
+        onclick="window.open(' https://github.com/SarkashTalib/django-blog-app', '_blank')">See Code</button>
+
+    </div>
+
+  </section>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

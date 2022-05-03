@@ -1,6 +1,7 @@
 module.exports = {
   content: [
     "./dist/index.html",
+    "./dist/detail.html",
   ],
   theme: {
     container: {
