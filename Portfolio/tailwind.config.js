@@ -1,7 +1,9 @@
 module.exports = {
   content: [
     "./dist/index.html",
-    "./dist/detail.html",
+    "./dist/codehance.html",
+    "./dist/ttc.html",
+    "./dist/table-booker.html",
   ],
   theme: {
     container: {
