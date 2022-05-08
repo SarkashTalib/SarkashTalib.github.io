@@ -749,11 +749,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 172 148 / var(--tw-bg-opacity));
 }
 
-.bg-alert{
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 47 77 / var(--tw-bg-opacity));
-}
-
 .p-8{
   padding: 2rem;
 }
