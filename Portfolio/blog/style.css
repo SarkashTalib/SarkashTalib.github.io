@@ -973,6 +973,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:invisible{
+    visibility: hidden;
+  }
+
   .md\:top-1\/2{
     top: 50%;
   }
