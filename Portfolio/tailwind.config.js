@@ -4,6 +4,8 @@ module.exports = {
     "./dist/codehance.html",
     "./dist/ttc.html",
     "./dist/table-booker.html",
+    "./dist/jobplus.html",
+    "./dist/portfolio.html",
   ],
   theme: {
     container: {
