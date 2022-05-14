@@ -547,6 +547,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 2rem;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -644,6 +648,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 83.333333%;
 }
 
+.w-10{
+  width: 2.5rem;
+}
+
+.w-32{
+  width: 8rem;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -658,6 +670,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-shrink-0{
   flex-shrink: 0;
+}
+
+.cursor-auto{
+  cursor: auto;
+}
+
+.cursor-default{
+  cursor: default;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.cursor-context-menu{
+  cursor: context-menu;
+}
+
+.cursor-zoom-in{
+  cursor: zoom-in;
 }
 
 .grid-cols-4{
@@ -746,6 +778,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 2px;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -764,6 +800,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-dark\/25{
   border-color: rgb(0 0 0 / 0.25);
+}
+
+.border-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-background{
@@ -799,6 +840,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-1{
   padding: 0.25rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-5{
@@ -930,6 +975,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5;
 }
 
+.leading-loose{
+  line-height: 2;
+}
+
 .text-grayish{
   --tw-text-opacity: 1;
   color: rgb(98 89 89 / var(--tw-text-opacity));
@@ -998,13 +1047,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 500ms;
 }
 
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:cursor-zoom-in:hover{
+  cursor: zoom-in;
+}
+
+.hover\:border-2:hover{
+  border-width: 2px;
+}
+
+.hover\:border-dark:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .hover\:bg-amber:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(218 163 85 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-grayish:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 89 89 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-button:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 172 148 / var(--tw-bg-opacity));
 }
 
 .hover\:text-amber:hover{
@@ -1109,10 +1185,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 2.5rem;
   }
 
-  .md\:gap-8{
-    gap: 2rem;
-  }
-
   .md\:rounded-none{
     border-radius: 0px;
   }
@@ -1211,10 +1283,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:justify-between{
     justify-content: space-between;
-  }
-
-  .lg\:gap-5{
-    gap: 1.25rem;
   }
 
   .lg\:px-7{

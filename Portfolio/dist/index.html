@@ -61,7 +61,7 @@
         <li><a href="#projects"
             class=" block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto border-b border-grayish/10 hover:text-amber hover:ease-in-out duration-300 ">PROJECTS</a>
         </li>
-        <li><a href="#"
+        <li><a href="#contact"
             class=" block text-lg py-2 px-10 text-md  text-center text-grayish font-roboto hover:text-amber hover:ease-in-out duration-300 ">CONTACT</a>
         </li>
       </ul>
@@ -69,7 +69,7 @@
     </div>
   </nav>
 
-  <section id="home" class="max-w-6xl mx-auto py-32 md:pt-52  ">
+  <section id="home" class="max-w-6xl mx-auto py-32  ">
 
     <figure class=" md:flex  rounded-xl p-8 md:p-0 ">
       <img class=" w-40 h-40 md:w-72 md:h-auto lg:w-96 md:mr-8 rounded-full md:rounded-none mx-auto bg-blend-color"
@@ -317,16 +317,23 @@
   <section id="contact" class="max-w-6xl mx-auto py-24">
 
     <div class="grid md:grid-cols-2 gap-10 ">
-      <div class="order-last md:order-none flex flex-col  gap-5  pt-1 md:pt-3">
-        <input class=" p-2 rounded-md border-2 border-grayish/20" type="text" placeholder="Name">
-        <input class="p-2 rounded-md border-2 border-grayish/20" type="email" placeholder="Email">
-        <input class="p-2 rounded-md border-2 border-grayish/20" type="subject" placeholder="Subject">
-        <textarea name="message" id="message" rows="6" placeholder=" Message"
-          class="p-1 rounded-md border-2 border-grayish/20"></textarea>
-        <button type="submit" class="px-5 lg:px-7 lg:py-1.5 bg-button text-dark/50 font-medium text-sm md:text-xl lg:text-2xl sm:tracking-wider rounded-xl
+      <div class="order-last md:order-none ">
+
+        <form class="flex flex-col  gap-5  pt-1 md:pt-3" action="https://app.99inbound.com/api/e/GqppkU0-" method="POST"
+          target="_blank">
+          <input class=" p-2 rounded-md border-2 border-grayish/20" type="text" placeholder="Name" name="name">
+          <input class="p-2 rounded-md border-2 border-grayish/20" type="email" placeholder="Email" name="email">
+          <input class="p-2 rounded-md border-2 border-grayish/20" type="subject" placeholder="Subject" name="subject">
+          <textarea name="message" id="message" rows="6" placeholder=" Message"
+            class="p-1 rounded-md border-2 border-grayish/20" name="message"></textarea>
+          <button type="submit" class="px-5 lg:px-7 lg:py-1.5 bg-button text-dark/50 font-medium text-sm md:text-xl lg:text-2xl sm:tracking-wider rounded-xl
                 group-hover:opacity-70 hover:bg-amber ease-in-out duration-500 uppercase">Send your message</button>
+
+
+        </form>
+
       </div>
-      <div class="text-grayish md:text-lg lg:text-xl leading-relaxed md:leading-loose  lg:leading-loose">If you
+      <div class="text-grayish md:text-lg lg:text-xl leading-loose md:leading-loose lg:leading-loose">If you
         have
         any questions
         about me or my
@@ -347,9 +354,14 @@
         Or meet me on:
 
         <div class="flex justify-around pt-11">
-          <img src="../images/contact-img/linkedin.svg" alt="contact-icons" class="">
-          <img src="../images/contact-img/instagram.svg" alt="contact-icons" class="">
-          <img src="../images/contact-img/github.svg" alt="contact-icons" class="">
+          <img src="../images/contact-img/linkedin.svg"
+            onclick="window.open('https://www.linkedin.com/in/sarkash-talib-490625179/', '_blank')" alt="contact-icons"
+            class="cursor-pointer">
+          <img src="../images/contact-img/instagram.svg"
+            onclick="window.open('https://www.instagram.com/software_dev22/', '_blank')" alt="contact-icons"
+            class="cursor-pointer">
+          <img src="../images/contact-img/github.svg" onclick="window.open('https://github.com/SarkashTalib', '_blank')"
+            alt="contact-icons" class="cursor-pointer">
         </div>
       </div>
     </div>
