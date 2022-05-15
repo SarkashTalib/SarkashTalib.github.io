@@ -1,11 +1,11 @@
 module.exports = {
   content: [
-    "./dist/index.html",
-    "./dist/codehance.html",
-    "./dist/ttc.html",
-    "./dist/table-booker.html",
-    "./dist/jobplus.html",
-    "./dist/portfolio.html",
+    "./docs/index.html",
+    "./docs/codehance.html",
+    "./docs/ttc.html",
+    "./docs/table-booker.html",
+    "./docs/jobplus.html",
+    "./docs/portfolio.html",
   ],
   theme: {
     container: {

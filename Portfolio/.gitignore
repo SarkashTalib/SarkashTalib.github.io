@@ -1,4 +1,4 @@
 .vscode
 
 
-# npx tailwindcss -i ./src/main.css -o ./blog/style.css --watch
+# npx tailwindcss -i ./src/main.css -o ./docs/style.css --watch
